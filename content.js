@@ -1,92 +1,45 @@
 window.PORTFOLIO = {
   name: "Mahmoud Mohamed",
-  role: "Flutter developer",
-  location: "Minia, Egypt",
-  heroIntro:
-    "I build polished Android and iOS experiences with Flutter and Dart. I focus on thoughtful architecture, accessible interfaces, and the details that make an app feel right.",
+  role: "Flutter Developer",
+  location: "Minya, Egypt",
   email: "mahmoudmohamed.dev12@gmail.com",
   phone: "+201127243403",
   linkedin: "https://linkedin.com/in/mahmoud-mohamed-3b7088247",
   github: "https://github.com/mahmoudmohamed17",
-  summary:
-    "Flutter developer with 2+ years of experience building Android and iOS apps through internships and team collaboration. I work with Dart, Flutter, REST APIs, Firebase, Supabase, and BLoC/Cubit or Provider, with a focus on performance, clean architecture, notifications, local storage, and Arabic RTL localization.",
-  education:
-    "BSc Computer Science, Faculty of Computers & Information, Minia (2022–2026)",
+  summary: "Flutter Developer with 1+ year of hands-on experience building cross-platform mobile applications through internships and collaborative projects. Experienced in developing scalable application features, integrating REST APIs and backend services, and implementing state management using BLoC/Cubit. Familiar with Clean Architecture, local persistence, push notifications, and third-party integrations, with a focus on maintainable code and reliable user experiences.",
   skills: [
-    "Flutter",
-    "Dart",
-    "BLoC / Cubit",
-    "REST APIs",
-    "Firebase",
-    "Supabase",
-    "Arabic RTL",
-    "Clean Architecture",
-    "Push/Local Notifications",
-    "CI/CD",
-    "Local Storage",
+    "Flutter", "Dart", "JavaScript", "BLoC / Cubit", "Provider",
+    "Clean Architecture", "MVVM", "Repository Pattern", "SOLID", "OOP",
+    "REST APIs", "Dio", "Firebase", "Supabase", "Drift", "SQLite", "Hive",
+    "Shared Preferences", "Responsive & Adaptive UI", "Arabic RTL Localization",
+    "Push & Local Notifications", "Maps Integration", "Git", "GitHub",
+    "GitHub Actions", "CI/CD", "Flutter DevTools", "Figma",
   ],
   experience: [
     {
-      role: "Flutter Intern",
-      company: "Huma Volve",
-      date: "Oct–Nov 2025",
-      detail:
-        "Shipped production app features using Clean Architecture; integrated REST endpoints with Dio and Cubit; translated Figma designs into reusable responsive widgets.",
+      role: "Flutter Intern", company: "Huma Volve", date: "Oct–Nov 2025 · Remote",
+      detail: "Built and shipped features in a production Flutter app, following Clean Architecture and code-review standards. Integrated REST API endpoints using Dio and Cubit, handling loading, error, and empty states. Converted Figma designs into responsive, reusable widgets, reducing duplicated UI code across features.",
       link: "https://www.linkedin.com/posts/mahmoud-mohamed-3b7088247_flutter-dart-humaabrvolve-share-7398023256919752704-y_VP/",
     },
     {
-      role: "Flutter Intern",
-      company: "Intern Intelligence",
-      date: "Mar–Apr 2025",
-      detail:
-        "Built movie and e-commerce training apps with Flutter, Cubit, and REST APIs, including search, pagination, cart, authentication, and favorites.",
+      role: "Flutter Intern", company: "Intern Intelligence", date: "Mar–Apr 2025 · Remote",
+      detail: "Developed two training mobile apps (movie and e-commerce) in Flutter and Dart, using Cubit for state management and REST APIs for data. Implemented search, pagination, cart, authentication, and favorites across both apps.",
     },
   ],
   projects: [
     {
-      title: "NovePrep",
-      category: "AI interview quiz generator",
-      description:
-        "Generates interview questions by domain using Gemini, with structured answer explanations. Supabase stores sessions and progress so users can pick up where they left off.",
-      year: "2025",
-      label: "Flutter, Gemini, Supabase",
+      title: "NovaPrep", category: "Interview quiz generator",
+      description: "Generates interview questions by domain using the Gemini API, with answer explanations for each question. Structured JSON schemas make AI output reliable to parse, and Supabase stores sessions and progress so users can resume where they left off.",
+      year: "2025", label: "Flutter, Cubit, Supabase, Gemini API",
       link: "https://github.com/mahmoudmohamed17/ai_interview_coach_app",
-      screens: [
-        "assets/projects/noveprep-1-home.webp",
-        "assets/projects/noveprep-2-quiz.webp",
-      ],
+      screens: ["assets/projects/novaprep.jpg"],
     },
     {
-      title: "GemiChat",
-      category: "AI chat app",
-      description:
-        "A Flutter chat app powered by Gemini with Supabase authentication and persistent chat history, organized in a feature-first structure with Cubit.",
-      year: "2025",
-      label: "Flutter, Gemini, Supabase",
+      title: "GemiChat", category: "AI chat app",
+      description: "A Flutter chat app powered by the Gemini API with a clean message UI. Supabase provides authentication and persistent chat history across devices, with a feature-first structure and Cubit state management.",
+      year: "2025", label: "Flutter, Cubit, Supabase, Gemini API",
       link: "https://github.com/mahmoudmohamed17/chat_bot_app",
-      screens: [
-        "assets/projects/gemichat-1-chat.webp",
-        "assets/projects/gemichat-2-login.webp",
-      ],
+      screens: ["assets/projects/gemichat.jpg"],
     },
-  ],
-  certificates: [
-    {
-      name: "Flutter & Dart Development Course",
-      url: "https://www.udemy.com/certificate/UC-2b333677-1d74-4887-ab1d-579396072cfc/",
-    },
-    {
-      name: "BLoC & MVVM in Flutter",
-      url: "https://www.udemy.com/certificate/UC-423dbc90-928a-44ee-a086-cbea44946e2b/",
-    },
-    {
-      name: "Responsive & Adaptive UI in Flutter",
-      url: "https://www.udemy.com/certificate/UC-c4531c28-a165-4826-910d-2d5e5399fc4b/",
-    },
-    {
-      name: "Clean Architecture in Flutter",
-      url: "https://www.udemy.com/certificate/UC-2684692d-8e37-4d2b-814f-61be3a20917e/",
-    },
-  ],
-  languages: ["Arabic, native", "English, proficient"],
+  ]
 };

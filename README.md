@@ -6,14 +6,18 @@ publishes the repository root through the workflow in `.github/workflows/deploy.
 
 ## Project structure
 
-- `index.html` contains the page structure, SEO metadata, theme bootstrap, and
-  no-JavaScript contact fallback.
+- `index.html`, `experience.html`, `skills.html`, `about.html`, and
+  `contact.html` are the portfolio's separate pages. Each page shares the same
+  navigation and theme bootstrap.
 - `content.js` is the single source of truth for profile text, skills,
   experience, projects, screenshot paths, certificates, and contact details.
-- `script.js` renders content safely and handles the theme toggle.
+- `script.js` renders page content safely and handles the shared theme toggle,
+  project details, and contact form.
 - `styles.css` contains theme tokens, layout, phone frames, and responsive rules.
-- `assets/projects/` contains the WebP screenshots used in the project phone
+- `assets/projects/` contains the project screenshots used in the portfolio
   frames.
+- `assets/Mahmoud-Mohamed-CV.pdf` is the downloadable CV linked from the home
+  page.
 
 ## Edit portfolio content
 
@@ -25,18 +29,17 @@ also stored there.
 ## Add project screenshots
 
 1. Export screenshots as WebP and place them in `assets/projects/`.
-2. Use descriptive filenames, for example `myapp-1-home.webp` and
-   `myapp-2-settings.webp`.
-3. Add the relative paths to that project's `screens` array in `content.js`.
-   The first screenshot is used for the high-priority hero preview; remaining
-   screenshots load lazily. If no screenshot is supplied, a styled placeholder
-   is shown.
+2. Use a descriptive filename, for example `myapp-home.webp`.
+3. Add the relative path to that project's `screens` array in `content.js`.
+   The first screenshot is used in its project card and dialog. The current
+   design displays one screenshot per project; the home hero illustration is
+   `assets/home.jpg`.
 
 ## Preview locally
 
 Open `index.html` in a browser, or serve the folder with any static file
-server. The theme toggle persists its choice in local storage; clear the
-`portfolio-theme` entry to restore system preference.
+server. The theme toggle persists its choice across pages in local storage;
+clear the `portfolio-theme` entry to restore system preference.
 
 ## GitHub Pages deployment
 

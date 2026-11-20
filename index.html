@@ -3,203 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0B1220" />
-    <meta
-      name="description"
-      content="Explore polished Flutter apps for Android and iOS, project details, and developer experience."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Flutter developer portfolio" />
-    <meta
-      property="og:description"
-      content="Explore polished Flutter apps for Android and iOS, project details, and developer experience."
-    />
-    <meta
-      property="og:image"
-      content="https://mahmoudmohamed17.github.io/my_portfolio/assets/projects/noveprep-1-home.webp"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Flutter developer portfolio" />
-    <meta
-      name="twitter:description"
-      content="Explore polished Flutter apps for Android and iOS, project details, and developer experience."
-    />
-    <meta
-      name="twitter:image"
-      content="https://mahmoudmohamed17.github.io/my_portfolio/assets/projects/noveprep-1-home.webp"
-    />
-    <link
-      rel="canonical"
-      href="https://mahmoudmohamed17.github.io/my_portfolio/"
-    />
+    <meta name="theme-color" content="#10131d" />
+    <meta name="description" content="Mahmoud Mohamed is a Flutter developer building thoughtful cross-platform mobile apps." />
+    <link rel="canonical" href="https://mahmoudmohamed17.github.io/my_portfolio/" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <title>Flutter developer portfolio</title>
+    <title>Mahmoud Mohamed — Flutter Developer</title>
     <script>
       (() => {
         let theme;
-        try {
-          theme = localStorage.getItem("portfolio-theme");
-        } catch (_) {}
-        if (theme !== "dark" && theme !== "light") {
-          theme = window.matchMedia("(prefers-color-scheme: light)").matches
-            ? "light"
-            : "dark";
-        }
+        try { theme = localStorage.getItem("portfolio-theme"); } catch (_) {}
+        if (theme !== "dark" && theme !== "light") theme = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
         document.documentElement.dataset.theme = theme;
       })();
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script src="content.js" defer></script>
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body data-page="home">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header wrap">
-      <a class="brand" href="#home">
-        <span class="brand-mark" aria-hidden="true">M</span>
-        <span id="brand-name"></span>
-      </a>
+      <a class="brand" href="index.html" aria-label="Mahmoud Mohamed home"><span class="brand-mark" aria-hidden="true">M</span><span class="brand-copy"><span id="brand-name"></span><span id="brand-role"></span></span></a>
       <nav class="nav" aria-label="Main navigation">
-        <a href="#work">Apps</a>
-        <a href="#experience">Experience</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="skills.html">Skills</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
-      <button
-        class="theme-toggle"
-        type="button"
-        aria-label="Switch color theme"
-      >
-        <span aria-hidden="true">◐</span>
-        <span class="theme-label">Light mode</span>
-      </button>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch theme">
+          <svg class="theme-icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          <svg class="theme-icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.2 15.6A8.2 8.2 0 0 1 8.4 4.8 8.5 8.5 0 1 0 19.2 15.6Z"/></svg>
+        </button>
+      </div>
     </header>
-
     <main id="main">
       <section class="hero wrap" id="home" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="availability">
-            <span class="status-dot" aria-hidden="true"></span>
-            <span id="hero-role"></span>
-            <span class="availability-divider" aria-hidden="true"></span>
-            <span>Open to junior roles</span>
-          </p>
-          <h1 id="hero-title">Flutter apps that feel right on every screen.</h1>
+          <h1 id="hero-title">Crafting cross-platform apps with <em>Flutter.</em></h1>
           <p class="hero-intro" id="hero-intro"></p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#work">
-              See my apps <span aria-hidden="true">↓</span>
-            </a>
-            <a class="button button-secondary" href="#contact">
-              Email me <span aria-hidden="true">↗</span>
-            </a>
+            <a class="button button-primary" href="contact.html">Hire Me</a>
+            <a class="button button-secondary" href="#selected-projects">Show my work</a>
+            <a class="button button-secondary button-download" href="assets/Mahmoud-Mohamed-CV.pdf" download aria-label="Download my latest CV version"><svg class="download-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>CV</span></a>
           </div>
-          <div
-            class="skill-list hero-skills"
-            id="hero-skills"
-            aria-label="Core skills"
-          ></div>
         </div>
-        <div
-          class="hero-showcase"
-          id="hero-showcase"
-          aria-label="App screenshots"
-        ></div>
+        <div class="hero-showcase"><img class="home-art" src="assets/home.jpg" alt="A smartphone showing a mobile app interface" fetchpriority="high" /></div>
       </section>
-
-      <section
-        class="work-section section"
-        id="work"
-        aria-labelledby="work-title"
-      >
+      <section class="work-section section" id="selected-projects" aria-labelledby="projects-title">
         <div class="wrap">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">Selected apps</p>
-              <h2 id="work-title">Built for real screens.</h2>
-            </div>
-            <p class="section-intro">
-              A closer look at the mobile products I’ve built with Flutter.
-            </p>
-          </div>
+          <div class="section-heading"><div><p class="section-kicker">Selected apps</p><h2 id="projects-title">Built for real screens.</h2></div><p class="section-intro">A closer look at the mobile products I’ve built with Flutter.</p></div>
           <div class="project-list" id="projects"></div>
         </div>
       </section>
-
-      <section
-        class="experience-section section"
-        id="experience"
-        aria-labelledby="experience-title"
-      >
-        <div class="wrap experience-layout">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">Experience</p>
-              <h2 id="experience-title">Learning by building.</h2>
-            </div>
-            <p class="section-intro" id="education"></p>
-          </div>
-          <div class="timeline" id="experience-list"></div>
-        </div>
-      </section>
-
-      <section
-        class="about-section section"
-        id="about"
-        aria-labelledby="about-title"
-      >
-        <div class="wrap about-layout">
-          <div>
-            <p class="section-kicker">About</p>
-            <h2 id="about-title">Thoughtful code.<br />Useful details.</h2>
-            <p class="about-languages" id="languages"></p>
-          </div>
-          <div class="about-copy">
-            <p id="summary"></p>
-            <h3>Toolkit</h3>
-            <div class="skill-list" id="skills"></div>
-            <h3>Certificates</h3>
-            <div class="certificate-list" id="certificates"></div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="contact-section section"
-        id="contact"
-        aria-labelledby="contact-title"
-      >
-        <div class="wrap contact-panel">
-          <div>
-            <p class="section-kicker">Let’s connect</p>
-            <h2 id="contact-title">Ready for the next build.</h2>
-            <p>Looking for a junior Flutter developer? I’d be glad to talk.</p>
-          </div>
-          <div class="contact-links" id="contact-links"></div>
-        </div>
-      </section>
     </main>
-
-    <noscript>
-      <div class="noscript-links">
-        JavaScript is needed to render portfolio details. You can still reach
-        Mahmoud:
-        <a href="mailto:mahmoudmohamed.dev12@gmail.com">Email</a> ·
-        <a href="https://github.com/mahmoudmohamed17">GitHub</a> ·
-        <a href="https://linkedin.com/in/mahmoud-mohamed-3b7088247">LinkedIn</a
-        >.
-      </div>
-    </noscript>
-    <footer class="site-footer wrap">
-      <span id="footer-name"></span>
-      <span id="footer-location"></span>
-      <a href="#home">Back to top ↑</a>
-    </footer>
+    <dialog class="project-dialog" aria-labelledby="dialog-title"><div class="dialog-shell"><button class="dialog-close" type="button" aria-label="Close project details">×</button><div class="dialog-gallery"><img class="dialog-image" alt=""></div><p class="project-category dialog-category"></p><h2 id="dialog-title"></h2><p class="dialog-description"></p><p class="dialog-tags"></p><a class="dialog-link" target="_blank" rel="noopener noreferrer"></a></div></dialog>
   </body>
 </html>
